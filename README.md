@@ -16,11 +16,15 @@ Este projeto é um sistema de delivery desenvolvido com Laravel, utilizando padr
 ```bash
 git clone https://github.com/calditostech/delivery-services.git
 cd delivery-services
-Instalar Dependências
-bater
+```
+
+### Instalar Dependências
+```
 composer install
 npm install
-Configurar o Ambiente
+```
+
+### Configurar o Ambiente
 Renomeie o arquivo .env.example para .env e configure as variáveis de ambiente conforme necessário. Aqui está um exemplo de configuração:
 
 ambiente
@@ -41,22 +45,27 @@ SESSION_LIFETIME=120
 
 WEBSOCKETS_SSL_LOCAL_CERT=
 WEBSOCKETS_SSL_LOCAL_PK=
-Criar o Banco de Dados
 
-Crie o arquivo de banco de dados SQLite:
+### Criar o Banco de Dados
 
-bater
+### Crie o arquivo de banco de dados SQLite:
+```
 touch /caminho/para/seu/banco-de-dados/database.sqlite
 php artisan migrate
+```
 
-Construir e Iniciar os Contêineres Docker
-bater
+### Construir e Iniciar os Contêineres Docker
+```
 docker-compose up -d
+```
 
-Compilar Recursos Frontend
-bater
+### Compilar Recursos Frontend
+```
 npm run dev
+```
 Uso
-Iniciar o Servidor de Desenvolvimento
+### Iniciar o Servidor de Desenvolvimento
 bater
+```
 php artisan serve
+```
